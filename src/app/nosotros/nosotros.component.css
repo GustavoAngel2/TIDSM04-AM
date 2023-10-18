@@ -1,0 +1,11 @@
+.info {
+  top:50%;
+  left:30%;
+  position: relative;
+  width: 480px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  background-color: hsl(0, 0%, 47%);
+  border: 3px solid rgb(5, 77, 5);
+}

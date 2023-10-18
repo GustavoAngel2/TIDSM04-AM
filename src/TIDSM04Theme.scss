@@ -1,0 +1,26 @@
+
+@use '@angular/material' as theme;
+@include theme.core();
+
+$TIDSM04-AM-primary: theme.define-palette(theme.$green-palette);
+$TIDSM04-AM-accent: theme.define-palette(theme.$pink-palette, A200, A100, A400);
+
+$TIDSM04-AM-level: theme.define-typography-level(
+  $font-family: Roboto,
+  $font-weight: 400,
+  $font-size: 1rem,
+  $line-height: 1,
+  $letter-spacing: normal,
+);
+
+$TIDSM04-AM-warn: theme.define-palette(theme.$red-palette);
+
+$TIDSM04-AM-theme: theme.define-light-theme((
+  color: (
+    primary: $TIDSM04-AM-primary,
+    accent: $TIDSM04-AM-accent,
+    warn: $TIDSM04-AM-warn,
+  )
+));
+@include theme.all-component-themes($TIDSM04-AM-theme);
+

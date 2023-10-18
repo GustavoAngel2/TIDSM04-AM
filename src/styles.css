@@ -1,0 +1,13 @@
+@font-face {
+  font-family: Roboto;
+  src: url(assets/fonts/Poppins-Bold.ttf) format('truetype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #222222;
+}
