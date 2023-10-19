@@ -6,7 +6,10 @@
 
 .lista {
   height: 100%;
-  width: 150px;
+  width: 300px;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .hide{

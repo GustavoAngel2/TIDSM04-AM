@@ -20,15 +20,18 @@ import { MenuComponent } from './menu/menu.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { RegistrosComponent } from './registros/registros.component';
+import { MatTableModule } from '@angular/material/table';
 
 const appRoutes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'nosotros',component:NosotrosComponent},
-  {path:'menu',component:MenuComponent}
+  {path:'menu',component:MenuComponent},
+  {path:'registros',component:RegistrosComponent}
 ]
 
 @NgModule({
-  declarations: [AppComponent, NosotrosComponent,LoginComponent],
+  declarations: [AppComponent, NosotrosComponent,LoginComponent, RegistrosComponent],
   imports: [
     RouterModule.forRoot(appRoutes, { enableTracing: true }),
     BrowserModule,
@@ -47,7 +50,8 @@ const appRoutes: Routes = [
     MatCardModule,
     MatMenuModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent],

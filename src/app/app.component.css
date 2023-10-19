@@ -3,3 +3,25 @@
   margin: 5px;
   left:calc(100% - 325px);
 }
+.Hamburguesa {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+}
+
+.lista {
+  height: 100%;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hide {
+  display: none;
+}
+
+mat-sidenav-content.mat-drawer-content.mat-sidenav-content.bg {
+  background-color: #222222;
+}
