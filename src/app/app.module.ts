@@ -16,14 +16,19 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MenuComponent } from './menu/menu.component';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 
 const appRoutes: Routes = [
   {path:'login',component:LoginComponent},
-  {path:'nosotros',component:NosotrosComponent}
+  {path:'nosotros',component:NosotrosComponent},
+  {path:'menu',component:MenuComponent}
 ]
 
 @NgModule({
-  declarations: [AppComponent, NosotrosComponent],
+  declarations: [AppComponent, NosotrosComponent,LoginComponent],
   imports: [
     RouterModule.forRoot(appRoutes, { enableTracing: true }),
     BrowserModule,
@@ -40,6 +45,9 @@ const appRoutes: Routes = [
     FormsModule,
     ReactiveFormsModule,
     MatCardModule,
+    MatMenuModule,
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,14 @@
+.Hamburguesa {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.lista {
+  height: 100%;
+  width: 150px;
+}
+
+.hide{
+  display: none;
+}
